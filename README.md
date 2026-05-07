@@ -1,19 +1,106 @@
-mongodb+srv://priyanshi:detrust1234@detrust-cluster.oysrfze.mongodb.net/?appName=detrust-cluster
+# 🔗 DeTrust — Decentralized AI-Driven Supply Chain Audit System
 
-coonection string 
+![Tech Stack](https://img.shields.io/badge/Stack-MERN%20%2B%20Solana%20%2B%20AI-00ff88)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-Perfect! Your public IP is 152.59.38.191
+## 🌟 What is DeTrust?
 
-_id     : 69f6031c142985edfc677da1
-name    : Priyanshi
-email   : priyanshigajjar46@gmail.com
-role    : manufacturer
-company : DeTrust Labs
-token   : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZjYwMzFjMTQyOTg1ZWRmYzY3N2RhMSIsImlhdCI6MT
-          c3NzczMDMzOSwiZXhwIjoxNzc4MzM1MTM5fQ.icOs57OOLy0h2lTEiZ19oyfuIOFwCMZyThzfnGBSdPk
+A platform where manufacturers, suppliers, and consumers can track the full lifecycle of a product using **AI anomaly detection** + **blockchain verification**.
 
+Most supply chain data is centralized and easily tampered with. DeTrust solves this by combining:
+- **AI/ML** to detect anomalies in real-time (temperature spikes, shipping delays)
+- **Solana blockchain** for immutable, permanent records
+- **QR codes** for consumers to verify product authenticity
 
-Successfully installed pip-26.1
+---
 
-cd C:\project_all\detrust\client
+## 🏗️ Architecture
+---
+
+## ⚡ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite + TailwindCSS |
+| Backend | Node.js + Express |
+| Database | MongoDB Atlas |
+| AI/ML | Python + FastAPI + scikit-learn (Isolation Forest) |
+| Blockchain | Solana (Devnet) + Anchor |
+| Cloud | Google Cloud Run |
+| Hosting | Vercel + Render |
+
+---
+
+## 🚀 Features
+
+- ✅ JWT Authentication (Manufacturer / Supplier / Logistics roles)
+- ✅ Product registration with unique ID + QR code
+- ✅ Real-time AI anomaly detection on shipment data
+- ✅ Trust Score system (0-100) updated by AI
+- ✅ Blockchain transaction recording on Solana Devnet
+- ✅ Consumer-facing product verification page
+- ✅ Live demo simulator
+
+---
+
+## 🛠️ Local Setup
+
+### Prerequisites
+- Node.js v20+
+- Python 3.11+
+- MongoDB Atlas account
+- Solana CLI
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/priyanshi675454/Decentralized-AI-Driven-Supply-Chain-Audit-System.git
+cd Decentralized-AI-Driven-Supply-Chain-Audit-System
+```
+
+### 2. Setup Server
+```bash
+cd server
+npm install
+# Create .env file with your values (see .env.example)
 npm run dev
+```
+
+### 3. Setup AI Service
+```bash
+cd ai-service
+pip install -r requirements.txt
+python model/train.py
+python -m uvicorn main:app --reload --port 8000
+```
+
+### 4. Setup Client
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create `server/.env`:
+
+## 📁 Project Structure
+detrust/
+├── client/          # React frontend
+├── server/          # Node.js + Express API
+├── ai-service/      # Python FastAPI + ML model
+└── blockchain/      # Solana Anchor program
+
+---
+
+## 👩‍💻 Built By
+
+**Priyanshi Gajjar** 
+Email: priyanshigajjar46@gmail.com
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/priyanshigajjar)
+
+---
+
